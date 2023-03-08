@@ -17,14 +17,8 @@ math: mathjax
 25.
 $$
 \begin{align}
-a. \frac{3}{10}+\frac{4}{15}
-&= \frac{45+40}{150} \\
-&= \frac{85}{150}
-= \frac{19}{30} \\\\
-
-b. \frac{1}{4}+\frac{1}{5}
-&= \frac{4+5}{20}
-= \frac{9}{20} \\
+a. \frac{3}{10}+\frac{4}{15}&= \frac{45+40}{150} \\&= \frac{85}{150}= \frac{19}{30} \\\\
+b. \frac{1}{4}+\frac{1}{5}&= \frac{4+5}{20}= \frac{9}{20} \\
 \end{align}
 $$
 
