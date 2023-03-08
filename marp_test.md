@@ -24,7 +24,7 @@ a. \frac{3}{10}+\frac{4}{15}
 
 b. \frac{1}{4}+\frac{1}{5}
 &= \frac{4+5}{20}
-= \frac{9}{20}\\
+= \frac{9}{20} \\
 \end{align}
 $$
 
@@ -34,7 +34,7 @@ $$
 $$
 \begin{align}
 a. \frac{2}{3}-\frac{3}{5} 
-&= \frac{10-9}{15}\\
+&= \frac{10-9}{15} \\
 &=\frac{1}{15} \\\\
 
 b. 1+\frac{5}{8}-\frac{1}{6} 
@@ -69,7 +69,7 @@ $$
 \begin{align}
 a. \left(3+\frac{1}{4}\right)\left(1-\frac{4}{5}\right)
 &= \left(\frac{12+1}{4}\right)\left(\frac{5-4}{5}\right) \\
-&= \frac{13}{20}\\\\
+&= \frac{13}{20} \\\\
 
 b. \left(\frac{1}{2}-\frac{1}{3}\right)\left(\frac{1}{2}+\frac{1}{3}\right)
 &= \left(\frac{1}{6}\right)\left(\frac{5}{6}\right) \\
@@ -86,7 +86,7 @@ a. \frac{2}{\frac{2}{3}}-\frac{\frac{2}{3}}{2}
 = \frac{\frac{4}{1}-\frac{4}{9}}{\frac{4}{3}}
 = \frac{\frac{36-4}{9}}{\frac{4}{3}}
 = \frac{96}{36}
-= \frac{8}{3}\\\\
+= \frac{8}{3} \\\\
 
 b. \frac{\frac{1}{12}}{\frac{1}{8}-\frac{1}{9}}
 = \frac{\frac{1}{12}}{\frac{9-8}{72}}
@@ -125,10 +125,10 @@ $$
 $$
 \begin{align}
 a. -3^2
-&= -9\\\\
+&= -9 \\\\
 
 b. (-3)^2
-&= 9\\\\
+&= 9 \\\\
 
 c. \left(\frac{1}{3}\right)^4(-3)^2
 &= \frac{1}{81}*9 = \frac{1}{9}
@@ -142,11 +142,11 @@ $$
 \begin{align}
 a. 5^4*5^{-2}
 &= \frac{625}{25}
-= 25\\\\
+= 25 \\\\
 
 b. \frac{10^7}{10^4}
 &= 10^{7-4}
-= 1000\\\\
+= 1000 \\\\
 
 c. \frac{3}{3^{-2}}
 &= \frac{\frac{3}{1}}{\frac{1}{9}}
