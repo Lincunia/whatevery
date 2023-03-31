@@ -30,43 +30,43 @@ plt.grid()
 plt.show()
 ```
 
-$ y=x^2 $
+$$ y=x^2 $
 ```python
 y = x**2
 ```
-$ y=x^2 +3 $
+$$ y=x^2 +3 $
 ```python
 y = (x**2)+3
 ```
-$ y=x^2 -3 $
+$$ y=x^2 -3 $
 ```python
-y = (x**2)-3 
+y = (x**2)-3 $$
 ```
-$ y=\left(x+3\right)^2 $
+$$ y=\left(x+3\right)^2 $
 ```python
-y = (x+3)**2 
+y = (x+3)**2 $$
 ```
-$ y=\left(x-3\right)^2 $
+$$ y=\left(x-3\right)^2 $
 ```python
-y = (x-3)**2 
+y = (x-3)**2 $$
 ```
-$ y=3x^2 $
+$$ y=3x^2 $
 ```python
 y = 3*x**2
 ```
-$ y=-3x^2 $
+$$ y=-3x^2 $
 ```python
-y = -3*x**2 
+y = -3*x**2 $$
 ```
-$ y=\frac{x^3}{3} $
+$$ y=\frac{x^3}{3} $
 ```python
-y = (x**2)-3 
+y = (x**2)-3 $$
 ```
-$ y=\left(x-3\right)^2 +2 $
+$$ y=\left(x-3\right)^2 +2 $
 ```python
-y = ((x-3)**2)+2 
+y = ((x-3)**2)+2 $$
 ```
-$ y=-\left(x-3\right)^2 +2 $
+$$ y=-\left(x-3\right)^2 +2 $
 ```python
-y = (-(x-3)**2)+2 
+y = (-(x-3)**2)+2 $$
 ```
