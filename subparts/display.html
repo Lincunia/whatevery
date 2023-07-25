@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Another script</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
+      integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn"
+      crossorigin="anonymous"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"
+      integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+      integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <ul class="uk-nav">
+        <li>
+          <a class="uk-button uk-button-default" href="../index.html"
+            >Página principal</a
+          >
+        </li>
+        <li class="uk-active">
+          <a class="uk-button uk-button-default" href="./display.html"
+            >Un proyecto</a
+          >
+        </li>
+        <li>
+          <a class="uk-button uk-button-default" href="./katex.html">proof</a>
+        </li>
+      </ul>
+    </header>
+    <div class="uk-section uk-section-primary">
+      <div class="uk-container uk-container-large">
+        <h2>Las functiones están dadas</h2>
+        <div class="uk-child-width-1-2@s uk-text-center" uk-grid>
+          <div>
+            <div class="uk-background-muted uk-padding uk-panel">
+              <p id="a" style="color: black"></p>
+              <div
+                class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="../images/pic1.png"
+                uk-img
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-background-muted uk-padding uk-panel">
+              <div
+                class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="../images/pic2.png"
+                uk-img
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-background-muted uk-padding uk-panel">
+              <div
+                class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="../images/pic3.png"
+                uk-img
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-background-muted uk-padding uk-panel">
+              <div
+                class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="../images/pic4.png"
+                uk-img
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-background-muted uk-padding uk-panel">
+              <div
+                class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="../images/pic5.png"
+                uk-img
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-background-muted uk-padding uk-panel">
+              <div
+                class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="../images/pic6.png"
+                uk-img
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-background-muted uk-padding uk-panel">
+              <div
+                class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="../images/pic7.png"
+                uk-img
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-background-muted uk-padding uk-panel">
+              <div
+                class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="../images/pic8.png"
+                uk-img
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-background-muted uk-padding uk-panel">
+              <div
+                class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="../images/pic9.png"
+                uk-img
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-background-muted uk-padding uk-panel">
+              <div
+                class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="../images/pic10.png"
+                uk-img
+              ></div>
+            </div>
+          </div>
+        </div>
+        <h2>Scripts de matplotlib</h2>
+        <p>
+          Si desean hacer este trabajo de la misma manera en sus computadores,
+          les sugero entonces que descarguen matplotlib y numpy, Antes que nada
+          tienen que seguir esta estructura para tener mayor mododidad (O al
+          menos para mí lo es)
+        </p>
+        <div
+          class="uk-container uk-container-xsmall uk-background-secondary uk-light uk-padding uk-panel"
+        >
+          import matplotlib.pyplot as plt<br />
+          import numpy as np<br /><br />
+
+          x = np.arange(-20, 20, 0.1)<br />
+          # Contenido de la función que deseen colocar<br />
+          plt.plot(x, y)<br />
+          plt.axis('scaled') # Esto es para que los ejes tengan su misma
+          proporción<br />
+          plt.grid()<br />
+          plt.show()<br />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <!-- UIkit CSS -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/css/uikit.min.css"
+      />
+      <!-- UIkit JS -->
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit-icons.min.js"></script>
+
+      <!-- KaTeX JS -->
+      <script type="module" type="text/javascript" src="../js/index.js"> </script>
+    </footer>
+  </body>
+</html>

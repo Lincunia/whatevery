@@ -1,29 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Whatevery-main</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-
-<body>
-    <div class="container">
-        <h1>Preuba base de todo esto</h1>
-        <div class="list-group">
-            <!-- DE PASO DEJO MIS CANCIONES PREFERIDAS -->
-            <a href="https://www.youtube.com/watch?v=2Z2D8OYnkmk" class="list-group-item list-group-item-action active" aria-current="true">Primer enlace de
-                prueba</a>
-            <a href="https://www.youtube.com/watch?v=GTuPI9or0do" class="list-group-item list-group-item-action">Segundo enlace</a>
-            <a href="https://www.youtube.com/watch?v=Gtv40bOE3U4" class="list-group-item list-group-item-action">Tercer enlace</a>
-            <a href="https://www.youtube.com/watch?v=3LMF3OHr55c" class="list-group-item list-group-item-action">Cuarto enlace</a>
+  <head>
+    <title>Lo que haya en la parte inicial</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <ul class="uk-nav">
+        <li class="uk-active">
+          <a class="uk-button uk-button-default" href="./index.html"
+            >Página principal</a
+          >
+        </li>
+        <li>
+          <a class="uk-button uk-button-default" href="subparts/display.html"
+            >Un proyecto</a
+          >
+        </li>
+        <li>
+          <a class="uk-button uk-button-default" href="subparts/katex.html"
+            >proof</a
+          >
+        </li>
+      </ul>
+    </header>
+    <section>
+      <div class="uk-card uk-card-default uk-width-1-2@m">
+        <div class="uk-card-header">
+          <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+              <img
+                class="uk-border-circle"
+                width="40"
+                height="40"
+                src="images/avatar.jpg"
+                alt="Avatar"
+              />
+            </div>
+            <div class="uk-width-expand">
+              <h3 class="uk-card-title uk-margin-remove-bottom">Saludos</h3>
+              <p class="uk-text-meta uk-margin-remove-top">
+                <time datetime="2023-07-24T17:23">24 de Julio de 2023</time>
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-</body>
-
+        <div class="uk-card-body">
+          <p>
+            <strong> Hecho por: </strong> Flipper y José<br />
+            Somos unos estudiantes de ingenieria que tratamos de encontrar todo
+            lo que podamos de nuestra carrear y optamos por meterla en este
+            sitio en el cual posiblemente pocas personas estén interesadas
+          </p>
+        </div>
+        <div class="uk-card-footer">
+          <a
+            href="https://github.com/Lincunia/whatevery"
+            class="uk-button uk-button-text"
+            >Nuestro proyecto</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!-- UIkit CSS -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/css/uikit.min.css"
+      />
+      <!-- UIkit JS -->
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit-icons.min.js"></script>
+    </footer>
+  </body>
 </html>
