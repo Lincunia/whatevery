@@ -12,14 +12,3 @@ __Firma:__ Flipper y José
 
  * [UIKit](https://getuikit.com/)
  * [KaTeX](https://github.com/KaTeX/KaTeX)
- * [NodeJS](https://nodejs.org/)
- * [NPM](https://www.npmjs.com/)
-
-## Quehaceres básicos antes de empezar a trabajar en el proyecto
-
-Como hemos usado NPM, es cuestión de usar este comando:
-```
-npm i
-```
-Esto lo que hará es instalar los paquetes que están en el archivo `package.json` y de esa manera no es redundante la
-copia de las herramientas en github

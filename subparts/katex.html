@@ -1,30 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Another script</title>
+    <title>Algo por hacer</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
-      integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn"
-      crossorigin="anonymous"
-    />
-
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"
-      integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
-      integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
-      crossorigin="anonymous"
-      onload="renderMathInElement(document.body);"
-    ></script>
   </head>
   <body>
     <header>
@@ -46,15 +25,53 @@
     </header>
     <div class="uk-section uk-section-primary">
       <div class="uk-container uk-container-large">
-        <p id="koopa"></p>
-        <script type="module" type="text/javascript" src="../js/index.js"> </script>
+        <h1>Por hacer: Haz algo interesante</h1>
+        <p>
+          En este sitio, veremos qué otras cosas podemos hacer en el proceso, no
+          importa si esto queda inconcluso, de momento lo que voy a hacer es
+          dejar este sitio con varias cosas de por medio:
+        </p>
+        <h2>Menú en forma de acordeón</h2>
+        <p>
+          Para este tipo de elementos en HTML les sugiero que clickeen con el
+          click de en medio, o busquen el enlace que aparece por debajo del
+          sitio, no sé, lo que a ustedes les parezca conveniente
+        </p>
+        <ul uk-accordion>
+          <li class="uk-open">
+            <a
+              class="uk-accordion-title"
+              href="https://open.spotify.com/track/6igsCAbBrVctRnCtpKkO2d?si=a0fe4a7b63bc4440"
+              >Troubleman</a
+            >
+            <div class="uk-accordion-content">
+              <p>
+                Una canción de Electric Guests que la pongo porque me pareció
+                sumamente interesante su concepto, jeje
+              </p>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title" href="https://stallman.org/"
+              >El sitio de RMS</a
+            >
+            <div class="uk-accordion-content">
+              <p>
+                Es irónico, pero de alguna manera me interesa la ideología de
+                este señor que lo banean.
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
     <footer>
+      <!-- UIkit CSS -->
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/css/uikit.min.css"
       />
+      <!-- UIkit JS -->
       <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit-icons.min.js"></script>
     </footer>
