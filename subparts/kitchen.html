@@ -34,156 +34,7 @@
       </ul>
     </header>
     <div class="uk-section uk-section-primary">
-      <div class="uk-container uk-container-large">
-        <h2>Cómo hacer un pan blandito</h2>
-        <object
-          width="80%"
-          height="400px"
-          data="../pdf/bread_ingredientes_and_process.pdf"
-          type="application/pdf"
-        >
-          <p>
-            No se puede ver el PDF,
-            <a href="../pdf/bread_ingredientes_and_process.pdf">Descargar</a>
-            en su lugar
-          </p>
-        </object>
-        <h2>Cómo hacer un bizcochuelo</h2>
-        <object
-          width="80%"
-          height="400px"
-          data="../pdf/little_sponge_cake_ingredients_and_process.pdf"
-          type="application/pdf"
-        >
-          <p>
-            No se puede ver el PDF,
-            <a href="../pdf/little_sponge_cake_ingredients_and_process.pdf"
-              >Descargar</a
-            >
-            en su lugar
-          </p>
-        </object>
-        <h2>
-          Ingredientes del brazo de reina (La receta es la misma que la del
-          bizcochuelo)
-        </h2>
-        <object
-          width="80%"
-          height="400px"
-          data="../pdf/queen_arm_ingredientes.pdf"
-          type="application/pdf"
-        >
-          <p>
-            No se puede ver el PDF,
-            <a href="../pdf/queen_arm_ingredientes.pdf">Descargar</a>
-            en su lugar
-          </p>
-        </object>
-        <h2>Cómo hacer croissants</h2>
-        <object
-          width="80%"
-          height="400px"
-          data="../pdf/croissant_ingredients_and_process.pdf"
-          type="application/pdf"
-        >
-          <p>
-            No se puede ver el PDF,
-            <a href="../pdf/croissant_ingredients_and_process.pdf">Descargar</a>
-            en su lugar
-          </p>
-        </object>
-        <h2>
-          Ingredientes de los rollitos de canela (La receta es la misma que la
-          del croissant)
-        </h2>
-        <object
-          width="80%"
-          height="400px"
-          data="../pdf/cinnamon_roll_ingredients.pdf"
-          type="application/pdf"
-        >
-          <p>
-            No se puede ver el PDF,
-            <a href="../pdf/cinnamon_roll_ingredients.pdf">Descargar</a>
-            en su lugar
-          </p>
-        </object>
-        <h2>Cómo hacer almojabanas</h2>
-        <object
-          width="80%"
-          height="400px"
-          data="../pdf/almojabana_ingredientes_and_process.pdf"
-          type="application/pdf"
-        >
-          <p>
-            No se puede ver el PDF,
-            <a href="../pdf/almojabana_ingredientes_and_process.pdf"
-              >Descargar</a
-            >
-            en su lugar
-          </p>
-        </object>
-        <h2>Cómo hacer pan de bonos</h2>
-        <object
-          width="80%"
-          height="400px"
-          data="../pdf/special_bread_ingredientes_and_process.pdf"
-          type="application/pdf"
-        >
-          <p>
-            No se puede ver el PDF,
-            <a href="../pdf/special_bread_ingredientes_and_process.pdf"
-              >Descargar</a
-            >
-            en su lugar
-          </p>
-        </object>
-        <h2>Cómo hacer pasta choux</h2>
-        <object
-          width="80%"
-          height="400px"
-          data="../pdf/pates choux.pdf"
-          type="application/pdf"
-        >
-          <p>
-            No se puede ver el PDF,
-            <a href="../pdf/pates choux.pdf"
-              >Descargar</a
-            >
-            en su lugar
-          </p>
-        </object>
-        <h2>Cómo hacer un ganache muy rico ... mmm</h2>
-        <object
-          width="80%"
-          height="400px"
-          data="../pdf/ganache.pdf"
-          type="application/pdf"
-        >
-          <p>
-            No se puede ver el PDF,
-            <a href="../pdf/ganache.pdf"
-              >Descargar</a
-            >
-            en su lugar
-          </p>
-        </object>
-        <h2>Cómo hacer unas galletas de avena</h2>
-        <object
-          width="80%"
-          height="400px"
-          data="../pdf/oatsCookie.pdf"
-          type="application/pdf"
-        >
-          <p>
-            No se puede ver el PDF,
-            <a href="../pdf/oatsCookie.pdf"
-              >Descargar</a
-            >
-            en su lugar
-          </p>
-        </object>
-      </div>
+      <div class="uk-container uk-container-large" id="content"></div>
     </div>
     <footer>
       <!-- UIkit CSS -->
@@ -194,6 +45,48 @@
       <!-- UIkit JS -->
       <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit-icons.min.js"></script>
+      <!-- THE FUNCTION OF THIS PAGE -->
+      <script>
+        const names = [
+          ["un pan blandito", "../pdf/bread_ingredientes_and_process.pdf"],
+          ["un brazo de reina", "../pdf/queen_arm_ingredientes.pdf"],
+          ["croissants", "../pdf/croissant_ingredients_and_process.pdf"],
+          [
+            "rollos de canela (La misma de los croissants)",
+            "../pdf/cinnamon_roll_ingredients.pdf",
+          ],
+          [
+            "unas almojabanas",
+            "../pdf/almojabana_ingredientes_and_process.pdf",
+          ],
+          ["pan de bonos", "../pdf/special_bread_ingredientes_and_process.pdf"],
+          ["pasta choux", "../pdf/patesChoux.pdf"],
+          ["un ganache muy rico... mmmm", "../pdf/ganache.pdf"],
+          ["unas galletas de avena", "../pdf/oatsCookie.pdf"],
+          ["merengues", "../pdf/meringue.pdf"],
+          ["un cheesecake de frutos rojos", "../pdf/cheesecakeOfRedFruits.pdf"],
+        ];
+        const content = document.getElementById("content");
+        for (const name of names) {
+          const newDiv = document.createElement("div");
+          newDiv.innerHTML = `
+          <h2> Cómo hacer ${name[0]} </h2>
+          <object
+            width="80%"
+            height="400px"
+            data="${name[1]}"
+            type="application/pdf"
+          >
+            <p>
+              No se puede ver el PDF,
+              <a href=${name[1]}>Descargar</a>
+              en su lugar
+            </p>
+          </object>
+                `;
+          content.appendChild(newDiv);
+        }
+      </script>
     </footer>
   </body>
 </html>
