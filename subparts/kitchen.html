@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <header>
       <ul class="uk-nav">
@@ -46,7 +47,8 @@
       <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit-icons.min.js"></script>
       <!-- THE FUNCTION OF THIS PAGE -->
-      <script>
+      <script type="module" type="text/javascript">
+        import { RenderInnerHTML } from "../js/index.js";
         const names = [
           ["un pan blandito", "../pdf/bread_ingredientes_and_process.pdf"],
           ["un brazo de reina", "../pdf/queen_arm_ingredientes.pdf"],
@@ -66,10 +68,11 @@
           ["merengues", "../pdf/meringue.pdf"],
           ["un cheesecake de frutos rojos", "../pdf/cheesecakeOfRedFruits.pdf"],
         ];
-        const content = document.getElementById("content");
         for (const name of names) {
-          const newDiv = document.createElement("div");
-          newDiv.innerHTML = `
+          RenderInnerHTML(
+            document.getElementById("content"),
+            document.createElement("div"),
+            `
           <h2> Cómo hacer ${name[0]} </h2>
           <object
             width="80%"
@@ -83,8 +86,8 @@
               en su lugar
             </p>
           </object>
-                `;
-          content.appendChild(newDiv);
+                `,
+          );
         }
       </script>
     </footer>
