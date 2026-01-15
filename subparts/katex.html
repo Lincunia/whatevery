@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Algo por hacer</title>
+		<!-- Escential links from KaTeX -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
+			integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn"
+			crossorigin="anonymous"
+		/>
+
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"
+			integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+			integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+			crossorigin="anonymous"
+			onload="renderMathInElement(document.body)"
+		></script>
+	</head>
+	<body>
+		<header>
+			<ul>
+				<li>
+					<a href="../index.html"> Main </a>
+				</li>
+				<li>
+					<a href="./display.html"> A college quiz </a>
+				</li>
+				<li>
+					<a href="./dates.html"> Some internal thoughts </a>
+				</li>
+				<li>
+					<a href="./katex.html"> proof </a>
+				</li>
+				<li>
+					<a href="./kitchen.html"> Some recipes </a>
+				</li>
+			</ul>
+		</header>
+		<div>
+			<div>
+				<h1>TO DO: Make something interesting</h1>
+				<p>
+					En este sitio, veremos qué otras cosas podemos hacer en el proceso, no
+					importa si esto queda inconcluso, de momento lo que voy a hacer es
+					dejar este sitio con varias cosas de por medio:
+				</p>
+				<h2>Menú en forma de acordeón</h2>
+				<p>
+					Para este tipo de elementos en HTML les sugiero que clickeen con el
+					click de en medio, o busquen el enlace que aparece por debajo del
+					sitio, no sé, lo que a ustedes les parezca conveniente
+				</p>
+				<ul uk-accordion>
+					<li>
+						<a
+							href="https://open.spotify.com/track/6igsCAbBrVctRnCtpKkO2d?si=a0fe4a7b63bc4440"
+							>Troubleman</a
+						>
+						<div>
+							<p> An Electric Guests song that I play because I found its concept extremely interesting
+							</p>
+						</div>
+					</li>
+					<li>
+						<a href="https://stallman.org">The RMS site</a>
+						<div>
+							<p>
+								It's ironic, but somehow I'm interested in the ideology of this
+								man who is banned.
+							</p>
+						</div>
+					</li>
+					<li>
+						<a>Qué estoy viendo de Reveal.JS</a>
+						<div>
+							<p>
+								Ahora bien, me encuentro en un punto en el cuál me intersa ver
+								algo más que Power Point para hacer otras presentaciones para mi
+								universidad. Esta cosa es básicamente un powerpoint pero en el
+								que se pueden hacer cambios internos a las diapositivas (meter
+								animaciones, código, videos, imágenes, etc.) que se
+								implementarán en las próximas diapositivas que vaya ir
+								colocando.
+							</p>
+							<p>
+								<strong>Nota: </strong> Esto no es algo a tomarse como "Serio",
+								por favor, no consideren esto como ayuda a sus cuestiones, esto
+								es simplemente para darme una referencia de por dónde puedo
+								continuar para no quedarme estancado en la procrastinación.
+							</p>
+						</div>
+					</li>
+					<li>
+						<a href="https://es.wikipedia.org/wiki/Integraci%C3%B3n"
+							>Una prueba que tomé hace poco de matemáticas</a
+						>
+						<div>
+							<ol id="execiseList"></ol>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<footer>
+			<!-- KaTeX JS -->
+			<script type="module" type="text/javascript">
+				import { KaTeXRenderWithAttributes } from "../js/index.js";
+				const LaTeXMap = [
+					[
+						"a",
+						`f'''(x) = \\cos(5x) \\\\
+              f''(0) = 2 \\Rightarrow f''(x) = \\frac{\\sin(5x)}{5} + 2 \\\\
+              f''(0) = 1 \\Rightarrow f'(x) = \\frac{-\\cos(5x)}{25} + 2x + 1 \\\\
+              f''(0) = -1 \\Rightarrow f(x) = \\frac{-\\sin(5x)}{125} + x^2 + x -1`,
+					],
+					[
+						"b",
+						`f(x) = y \\land \\frac{\\mathrm{d}y}{\\mathrm{d}x} = -xe^y \\\\
+               \\frac{\\mathrm{d}y}{e^y} = -x\\mathrm{d}x \\implies \\int \\frac{\\mathrm{d}y}{e^y} = \\int -x\\mathrm{d}x \\\\
+               \\int \\frac{\\mathrm{d}y}{e^y} = \\frac{-x^2}{2} + c`,
+					],
+					[
+						"c",
+						`\\int \\frac{\\sin(\\sqrt{x})}{\\sqrt{x}} \\mathrm{d}x \\\\
+              u = \\sqrt{x} \\Rightarrow \\mathrm{d}x = \\mathrm{d}u2\\sqrt{x} \\\\ \\\\
+              \\int \\frac{\\sin(u)}{\\sqrt{x}} \\mathrm{d}u * 2 * \\sqrt{x} \\\\
+              \\int 2 * \\sin(u) \\mathrm{d}u \\\\
+              -2 * \\cos(u) + c \\Rightarrow -2 * \\cos(\\sqrt{x}) + c`,
+					],
+					[
+						"d",
+						`\\int x^2*e^x \\mathrm{d}x \\\\ \\\\
+              u = x^2 \\Rightarrow \\mathrm{d}u = 2*x \\mathrm{d}x \\\\
+              \\mathrm{d}v = e^x \\mathrm{d}x \\Rightarrow v = e^x \\\\
+              x^2 * e^x - \\int e^x2*x \\mathrm{d}x \\\\ \\\\
+              u = 2x \\Rightarrow \\mathrm{d}u = 2 \\mathrm{d}x \\\\
+              \\mathrm{d}v = e^x \\mathrm{d}x \\Rightarrow v = e^x \\\\
+              x^2 * e^x - (2x * e^x - 2e^x) + c`,
+					],
+					[
+						"e",
+						`\\int \\sqrt{\\sec(x)} * \\sec(x)\\tan(x) \\mathrm{d}x \\\\
+              u = \\sec(x) \\Rightarrow \\mathrm{d}x = \\frac{\\mathrm{d}u}{\\sec(x)\\tan(x)} \\\\ \\\\
+              \\int \\sqrt{u} * \\sec(x)\\tan(x) \\frac{\\mathrm{d}u}{\\sec(x)\\tan(x)} \\\\
+              \\int \\sqrt{u} \\mathrm{d}u \\\\
+              \\frac{2*u^{\\frac{3}{2}}}{3} + c \\Rightarrow \\frac{2*\\sec(x)\\sqrt{\\sec(x)}}{3} +c`,
+					],
+					[
+						"f",
+						`\\int \\frac{17x + 25}{2x^2 + 2x - 4} \\mathrm{d}x \\\\ \\\\
+              \\frac{17x + 25}{2x^2 + 2x - 4} = \\frac{A}{2x + 4} + \\frac{B}{x - 1} \\\\
+              17x + 25 = A(x - 1) + B(2x + 4) \\\\
+              x = 1 \\Rightarrow 42 = A(0) + B(6) \\implies B = \\frac{42}{6} = 7 \\\\
+              x = -2 \\Rightarrow -9 = A(-3) + B(0) \\implies A = \\frac{-9}{-3} = 3 \\\\ \\\\
+              \\int \\frac{3}{2x + 4} \\mathrm{d}x + \\int \\frac{7}{x - 1} \\mathrm{d}x \\\\
+              \\frac{3}{2} \\ln{\\mid{x + 2}\\mid} + 7 \\ln{\\mid{x - 1}\\mid} + c`,
+					],
+				];
+				document.addEventListener("DOMContentLoaded", () => {
+					const pics = document.getElementById("execiseList");
+					for (const val of LaTeXMap) {
+						KaTeXRenderWithAttributes(
+							document.getElementById("execiseList"),
+							document.createElement("li"),
+							val[1],
+							val[0],
+						);
+					}
+				});
+			</script>
+		</footer>
+	</body>
+</html>

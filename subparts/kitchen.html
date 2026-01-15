@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Lo que haya en la parte inicial</title>
+	</head>
+
+	<body>
+		<header>
+			<ul class="uk-nav">
+				<li>
+					<a href="../index.html"> Main </a>
+				</li>
+				<li>
+					<a href="./display.html"> A college quiz </a>
+				</li>
+				<li>
+					<a href="./dates.html"> Some internal thoughts </a>
+				</li>
+				<li>
+					<a href="./katex.html"> proof </a>
+				</li>
+				<li>
+					<a href="./kitchen.html"> Some recipes </a>
+				</li>
+			</ul>
+		</header>
+		<div class="uk-section uk-section-primary">
+			<div class="uk-container uk-container-large" id="content"></div>
+		</div>
+		<footer>
+			<!-- THE FUNCTION OF THIS PAGE -->
+			<script type="module" type="text/javascript">
+				import { RenderInnerHTML } from "../js/index.js";
+				const names = [
+					["Torta de almojabana", "../pdf/almojabanaCake.pdf"],
+					[
+						"Formulación de croissant",
+						"../pdf/croissant_ingredients_and_process.pdf",
+					],
+					["Galletas de avena", "../pdf/oatsCookie.pdf"],
+					["Brazo de reina", "../pdf/queen_arm_ingredientes.pdf"],
+					["Almojábana", "../pdf/almojabana_ingredientes_and_process.pdf"],
+					["Focaccia", "../pdf/focaccia.pdf"],
+					["Panettone", "../pdf/panettone.pdf"],
+					["Torta red velvet", "../pdf/redVelvetPie.pdf"],
+					["Pan blandito", "../pdf/bread_ingredientes_and_process.pdf"],
+					["Ganache de chocolate", "../pdf/ganache.pdf"],
+					["Tartaletas de frutas", "../pdf/pastryCream.pdf"],
+					["Roscón", "../pdf/roscon_ingredients_and_process.pdf"],
+					["Cheesecake de frutos rojos", "../pdf/cheesecakeOfRedFruits.pdf"],
+					["Pan de la abuela", "../pdf/grandmothersBread.pdf"],
+					["Pasta choux", "../pdf/patesChoux.pdf"],
+					[
+						"Pan de bono campesino",
+						"../pdf/special_bread_ingredientes_and_process.pdf",
+					],
+					["Rollos de canela", "../pdf/cinnamon_roll_ingredients.pdf"],
+					[
+						"Biscochuelo",
+						"../pdf/little_sponge_cake_ingredients_and_process.pdf",
+					],
+					[
+						"Torta de limón con semillas de amapola",
+						"../pdf/poppySeedCake.pdf",
+					],
+					["Torta de vino", "../pdf/wineCake.pdf"],
+					["Galletas de colación", "../pdf/collationCookies.pdf"],
+					["Merengue suizo", "../pdf/meringue.pdf"],
+					[
+						"Pasta de Hojaldre para hacer pasabocas, corazones y estrudel de pollo",
+						"../pdf/puffPastryDough.pdf",
+					],
+				];
+				for (const name of names) {
+					RenderInnerHTML(
+						document.getElementById("content"),
+						document.createElement("div"),
+						`
+<h2> Cómo hacer ${name[0]} </h2>
+<object
+	width="80%"
+	height="400px"
+	data="${name[1]}"
+	type="application/pdf"
+>
+<p>
+	  No se puede ver el PDF,
+	  <a href=${name[1]}>Descargar</a>
+	  en su lugar
+</p>
+</object>
+                `,
+					);
+				}
+			</script>
+		</footer>
+	</body>
+</html>

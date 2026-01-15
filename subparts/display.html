@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Another script</title>
+		<!-- Escential links from KaTeX -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
+			integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn"
+			crossorigin="anonymous"
+		/>
+
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"
+			integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+			integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+			crossorigin="anonymous"
+			onload="renderMathInElement(document.body);"
+		></script>
+		<!-- My source for KaTeX from scratch -->
+	</head>
+	<body>
+		<header>
+			<ul>
+				<li>
+					<a> Main </a>
+				</li>
+				<li>
+					<a> A college quiz </a>
+				</li>
+				<li>
+					<a> Some internal thoughts </a>
+				</li>
+				<li>
+					<a> proof </a>
+				</li>
+				<li>
+					<a> Some recipes </a>
+				</li>
+			</ul>
+		</header>
+		<div>
+			<div>
+				<h2>Las functiones están dadas</h2>
+				<div uk-grid id="pictures"></div>
+				<h2>Scripts de matplotlib</h2>
+				<p>
+					Si desean hacer este trabajo de la misma manera en sus computadores,
+					les sugero entonces que descarguen matplotlib y numpy, Antes que nada
+					tienen que seguir esta estructura para tener mayor mododidad (O al
+					menos para mí lo es)
+				</p>
+				<div>
+					import matplotlib.pyplot as plt<br />
+					import numpy as np<br /><br />
+
+					x = np.arange(-20, 20, 0.1)<br />
+					# Contenido de la función que deseen colocar<br />
+					plt.plot(x, y)<br />
+					plt.axis('scaled') # Esto es para que los ejes tengan su misma
+					proporción<br />
+					plt.grid()<br />
+					plt.show()<br />
+				</div>
+				<h2>Sugerencias de Flipper del futuro (2023-08-24)</h2>
+				<p>
+					Esa fecha es en la que el autor se dió cuenta de que no era eficiente
+					ilustrar las ecuaciones con imágenes como lo hizo previamente. Él
+					pensará en qué herramienta se va a apoyar para crear las mismas
+					ilustraciones de las ecuaciones que están en esta página...
+					<i> Pensamientos de Flipper </i>
+				</p>
+			</div>
+		</div>
+		<footer>
+			<!-- KaTeX JS -->
+			<script type="module" type="text/javascript">
+				import { KaTeXRenderWithInnerHTML } from "../js/index.js";
+				const myMappings = [
+					["a", "y = x^2", "../images/pic1.png"],
+					["b", "y = x^2 +3", "../images/pic2.png"],
+					["c", "y = x^2 -3", "../images/pic3.png"],
+					["d", "y = \\left(x+3\\right)^2", "../images/pic4.png"],
+					["e", "y = \\left(x-3\\right)^2", "../images/pic5.png"],
+					["f", "y = 3x^2", "../images/pic6.png"],
+					["g", "y = -3x^2", "../images/pic7.png"],
+					["h", "y = \\frac{x^3}{3}", "../images/pic8.png"],
+					["i", "y = \\left(x-3\\right)^2 +2", "../images/pic9.png"],
+					["j", "y = -\\left(x-3\\right)^2 +2", "../images/pic10.png"],
+				];
+				document.addEventListener("DOMContentLoaded", () => {
+					for (const val of myMappings) {
+						KaTeXRenderWithInnerHTML(
+							document.getElementById("pictures"),
+							document.createElement("div"),
+							`
+<div>
+	<p id="${val[0]}" style="color: black"></p>
+	<div data-src="${val[2]}" uk-img></div>
+</div>
+              `,
+							val[1],
+							val[0],
+						);
+					}
+				});
+			</script>
+		</footer>
+	</body>
+</html>
