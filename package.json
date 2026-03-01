@@ -1,0 +1,23 @@
+{
+  "name": "whatevery",
+  "version": "1.0.0",
+  "description": "This is just a way to know how to create a backend with the NodeJS tools",
+  "homepage": "https://github.com/Lincunia/whatevery#readme",
+  "bugs": {
+    "url": "https://github.com/Lincunia/whatevery/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lincunia/whatevery.git"
+  },
+  "license": "ISC",
+  "author": "Lincunia Altamoid",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
