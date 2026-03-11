@@ -12,12 +12,16 @@
   },
   "license": "ISC",
   "author": "Lincunia Altamoid",
-  "type": "commonjs",
-  "main": "app.js",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Why do you have to be pesimistic? and does this affect to your flags, npm?\"",
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "morgan": "^1.10.1",
+    "pg": "^8.20.0"
   }
 }

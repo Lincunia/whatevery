@@ -1,3 +1,4 @@
 # Ignoring npm programs
 node_modules/
 my_things/
+*.bak
