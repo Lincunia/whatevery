@@ -1,7 +1,7 @@
 CREATE TABLE users (
 	id SMALLSERIAL PRIMARY KEY,
 	name VARCHAR(255) NOT NULL,
-	email VARCHAR(255) NOT NULL,
+	email VARCHAR(255) NOT NULL UNIQUE,
 	created_at TIMESTAMP DEFAULT CRRENT_TIMESTAMP
 );
 /* Estas inserciones fueron creadas con chatgpt */

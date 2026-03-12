@@ -17,7 +17,7 @@
   "scripts": {
     "test": "echo \"Why do you have to be pesimistic? and does this affect to your flags, npm?\"",
     "start": "node src/index.js",
-    "dev": "node --watch src/index.js"
+    "dev": "node --env-file .env --watch src/index.js"
   },
   "dependencies": {
     "express": "^5.2.1",

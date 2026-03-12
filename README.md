@@ -24,6 +24,12 @@ importaciones?
 * ¿Hay una forma de seguir haciendo pruebas con métodos HTTP sin usar un REST
 client?
 * ¿Por qué en PostgreSQL se tiene una secuencia antes?
+* ¿Por qué en el get de los usuarios cada que hay una consulta que no retorna
+nada, tengo que añadir un return si ya de por sí, la respuesta se da?
+* ¿Por qué por un momento me salio timeout error (osea, que se tardó mucho en
+responder que no ha encontrado na')?
+* ¿Por qué hacer un `config.js` en el que se colóquen las variables y no
+simplemente montar lo que se haya en el .env?
 
 ## Enlaces pendientes de lectura
  * [A qué viene eso de REST](https://blog.dreamfactory.com/7-simple-rest-client-examples-for-retrieving-api-data)
