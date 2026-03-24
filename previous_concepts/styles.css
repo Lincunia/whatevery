@@ -1,0 +1,43 @@
+h1 {
+	color: red;
+}
+p,
+li {
+	color: green;
+}
+.nothing-special {
+	color: yellow;
+	font-weight: light;
+}
+li em {
+	color: pink;
+}
+h1 + p {
+	font-size: 200%;
+}
+/* Esto es styling basado en el texto*/
+a:link {
+	color: darkgray;
+}
+a:visited {
+	color: darkblue;
+}
+a:hover {
+	text-decoration: none;
+}
+.outer {
+	border: 5px solid black;
+}
+.box {
+	padding: 10px;
+	width: calc(90% - 30px);
+	background-color: rebeccapurple;
+	color: white;
+}
+.alternative-box{
+	margin: 30px;
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	transform: rotate(0.5turn)
+}

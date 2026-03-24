@@ -30,6 +30,10 @@ nada, tengo que añadir un return si ya de por sí, la respuesta se da?
 responder que no ha encontrado na')?
 * ¿Por qué hacer un `config.js` en el que se colóquen las variables y no
 simplemente montar lo que se haya en el .env?
+* ¿Es necesario meter esta cosa dentro de los archivos HTML?
+```html
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+```
 
 ## Enlaces pendientes de lectura
  * [A qué viene eso de REST](https://blog.dreamfactory.com/7-simple-rest-client-examples-for-retrieving-api-data)
@@ -38,4 +42,4 @@ simplemente montar lo que se haya en el .env?
  * [pg](https://node-postgres.com/)
  * [Asyncronous stuff on javascript](https://javascript.info/async)
  * [PostgreSQL and the network](https://linuxcapable.com/how-to-install-postgresql-on-arch-linux/)
-
+ * [What are those things in HTML](https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/)
