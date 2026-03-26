@@ -16,10 +16,6 @@ Por último, corre el proyecto usando `npm run dev`
 
 ## Dudas existenciales
 
-* ¿Cuál es la diferencia entre "require()" e "import" y cómo es que este último
-se relaciona con la variable "type" de `package.json`?
-* ¿Por qué se menciona [CommonJS](https://nodejs.org/api/modules.html) para las
-importaciones?
 * ¿Qué ocurre con las APIs?
 * ¿Hay una forma de seguir haciendo pruebas con métodos HTTP sin usar un REST
 client?
