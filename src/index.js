@@ -6,6 +6,8 @@ export const PORT = process.env.PORT || 3000;
 
 const app = express();
 
+app.set("view engine", "ejs");
+
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(userRoutes);

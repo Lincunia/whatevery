@@ -2,7 +2,7 @@ De antemano les aviso que este es un repositorio en donde estoy haciendo una
 serie de pruebas basadas en tutoriales de youtube sobre el uso de NodeJS y
 PostgreSQL. Por lo tanto, no utilicen este repositorio para hacer trabajos
 prácticos porque es un repositorio que uso de referencia para no sólo aprender
-de desarrollo backend, sino también el tener mantener un poco más viva mi
+de desarrollo backend, sino también el tener mantener un poco más "viva" mi
 cuenta de github.
 
 ## Lo que se debe hacer
