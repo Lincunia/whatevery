@@ -20,9 +20,11 @@
     "dev": "node --env-file .env --watch src/index.js"
   },
   "dependencies": {
+    "@types/node": "^25.5.2",
     "express": "^5.2.1",
     "morgan": "^1.10.1",
     "pg": "^8.20.0",
-    "static-server": "^3.0.0"
+    "static-server": "^3.0.0",
+    "typescript": "^6.0.2"
   }
 }

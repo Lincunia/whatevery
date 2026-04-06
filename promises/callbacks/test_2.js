@@ -16,3 +16,21 @@ loadScript(
 		alert(_); // No me pregunen por qué _ es una función, porque no lo sé
 	},
 );
+/*
+ * An excercise I did. It will obviously display an error because the existance
+ * of the four jpg pictures are null.
+ */
+function preloadImages(sources, callback) {
+	sources.forEach((source) => {
+		let img = document.createElement("img");
+		img.src = source;
+		img.onload = () => callback();
+		img.onerror = () => alert(`${source} wasn't loaded`);
+		document.body.append(img);
+	});
+}
+
+function loaded() {
+	alert("Images loaded");
+}
+preloadImages(["1.jpg", "2.jpg", "3.jpg", "4.jpg"], loaded);

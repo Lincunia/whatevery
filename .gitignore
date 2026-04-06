@@ -1,6 +1,7 @@
 # Ignoring npm programs
 node_modules/
 my_things/
+baby_ts/*.js
 *.bak
 .env
 package-lock.json
