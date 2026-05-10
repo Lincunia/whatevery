@@ -30,6 +30,7 @@ simplemente montar lo que se haya en el .env?
 ```html
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 ```
+* Qué signfica "serverless"
 
 ## Enlaces pendientes de lectura
  * [A qué viene eso de REST](https://blog.dreamfactory.com/7-simple-rest-client-examples-for-retrieving-api-data)

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Event delegation</title>
+	</head>
+	<body>
+		<div id="form">
+			<button data-action="hey-wat">A button clicked</button>
+			<button data-action="you-say-hey">A button clicked</button>
+			<button data-action="croisant-emoji">A button clicked</button>
+			<button data-action="fuck-you">A button clicked</button>
+		</div>
+		<script>
+			let elem = document.getElementById("form");
+			elem.addEventListener("click", (event) => {
+				switch (event.target.dataset.action) {
+					case "hey-wat":
+						alert("I say Hey");
+						break;
+					case "you-say-hey":
+						alert('And you say \"Hey\"');
+						break;
+					case "croisant-emoji":
+						alert("And I say: OK *croissant emoji*");
+						break;
+					case "fuck-you":
+						alert("FUCK YOU!");
+						break;
+				}
+			});
+		</script>
+	</body>
+</html>

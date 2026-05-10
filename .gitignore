@@ -4,4 +4,3 @@ my_things/
 baby_ts/*.js
 *.bak
 .env
-package-lock.json

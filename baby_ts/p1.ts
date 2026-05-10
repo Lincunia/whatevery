@@ -1,2 +1,2 @@
-let str:arre = 'Hello friend';
+let arre: string = 'Hello friend';
 console.log(arre);
